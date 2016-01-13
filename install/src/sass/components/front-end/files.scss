@@ -1,0 +1,63 @@
+.folder_container{
+    width: $maxFormWidth;
+    margin: 10px auto;
+    background-color: #FFF;
+    .file_wrapper{
+        padding: 1em;
+        border-bottom: 1px solid #EEE;
+        cursor: pointer ;
+        background: #FFF;
+        .edit_form{
+            display:none;
+        }
+
+    }
+    .file_wrapper:hover{
+        background: #EFEFEF;
+    }
+
+    .edit.file_wrapper{
+        .edit_form{
+             display:block
+        }
+        .file-label{
+            display: none;
+        }
+    }
+    .edit.file_wrapper:hover{
+        background: none;
+
+    }
+    .save-btn{
+        margin-right: 10px;
+    }
+    .form-group{
+        margin-top: 20px;
+    }
+}
+
+.action_container{
+      width: $maxFormWidth;
+    margin: 4px auto;
+    background-color: #FFF;
+    padding: 1em;
+    .delete{
+        margin-left: 1em;
+    }
+    .form-group{
+        margin-top: 20px;
+    }
+     .save-btn{
+        margin-right: 10px;
+    }
+    .new_folder{
+        display:none;
+    }
+    .edit{
+        .new_folder{
+            display:block;
+            margin-top: 10px;
+        }
+        display:true;
+    }
+}

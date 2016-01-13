@@ -1,0 +1,29 @@
+{
+    "files":[
+        {
+            "id": 1,
+            "name":"Simple.txt",
+            "extension": "txt",
+            "size": "5kb"
+        },
+         {
+            "id": 2,
+            "name":"Other.doc",
+            "extension": "doc",
+            "size": "15kb"
+        },
+         {
+            "id": 3,
+            "name":"Thrid.jpg",
+            "extension": "jpg",
+            "size": "35kb"
+        },
+        {
+            "id": 4,
+            "name":"Fourth.js",
+            "extension": "js",
+            "size": "45kb"
+        }
+
+    ]
+}

@@ -1,0 +1,4 @@
+{
+    "styleDest": "./public/stylesheets",
+    "jsDest": "./public/javascripts"
+}
