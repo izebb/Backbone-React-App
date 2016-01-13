@@ -85,6 +85,8 @@ var FilesView  = React.createClass({
         file.toggle();
         if(this.props.files.getSelected().length === this.props.files.length){
             this.setState({selectAll:true});
+        }else{
+            this.setState({selectAll:true});
         }
        this.setState({disabled: this.props.files.getSelected().length == 0})
     },

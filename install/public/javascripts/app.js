@@ -32441,6 +32441,9 @@ var FileView = React.createClass({
     updateFile: function (ev) {
         ev.preventDefault();
         var file = ReactDOM.findDOMNode(this.refs.fileName);
+        if (!file.value.trim()) {
+            return;
+        }
         file.defaultValue = file.value;
         this.props.file.set('name', file.value);
         this.props.file.set('editing', false);
@@ -32582,6 +32585,8 @@ var FilesView = React.createClass({
     toggleFile: function (file, ev) {
         file.toggle();
         if (this.props.files.getSelected().length === this.props.files.length) {
+            this.setState({ selectAll: true });
+        } else {
             this.setState({ selectAll: true });
         }
         this.setState({ disabled: this.props.files.getSelected().length == 0 });
