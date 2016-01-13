@@ -32597,10 +32597,11 @@ var FilesView = React.createClass({
     createFolder: function (ev) {
         ev.preventDefault();
         var file = ReactDOM.findDOMNode(this.refs.folderName);
-        this.props.files.unshift({
+        this.props.files.push({
             name: file.value,
-            id: this.props.files.length
+            id: this.props.files.length + 1
         });
+        console.log(this.props.files.length);
         this.setState({ isCreating: false });
     },
     cancelSave: function () {
